@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/tweets', function () {
+    sleep(2);
     return Tweet::with('user:id,name,username,avatar')->latest()->get();
 });
 
