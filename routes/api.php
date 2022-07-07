@@ -23,5 +23,3 @@ Route::get('/tweets', function () {
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-
-// test 2
